@@ -1,0 +1,28 @@
+{
+  "name": "goldenai-server",
+  "version": "1.0.0",
+  "description": "GoldenAI Backend - Node.js/Express API with MongoDB & Pinecone",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node ../scripts/seedCelebrities.js"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^2.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.1.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "keywords": ["goldenai", "biometric", "face-analysis", "golden-ratio"],
+  "author": "Yash Vijay",
+  "license": "MIT"
+}
